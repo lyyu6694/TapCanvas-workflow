@@ -1,0 +1,226 @@
+:root[data-mantine-color-scheme="dark"] {
+  --mantine-color-body: #09090b;
+  --mantine-color-text: #e5e7eb;
+  --mantine-color-dimmed: #9aa4b2;
+  --mantine-color-default: #0f0f12;
+  --mantine-color-default-hover: #161619;
+  --mantine-color-gray-6: #1f1f24;
+  --mantine-color-gray-7: #141417;
+  --mantine-color-anchor: #7dd3fc;
+
+  --canvas-node-bg: rgba(9, 9, 11, 0.96);
+  --canvas-node-border: rgba(255, 255, 255, 0.06);
+  --canvas-node-border-selected: rgba(148, 163, 184, 0.7);
+  --canvas-node-shadow: 0 16px 34px rgba(0, 0, 0, 0.55);
+  --canvas-node-text: #e5e7eb;
+  --canvas-node-subtext: #9aa4b2;
+  --canvas-node-header-bg: rgba(9, 9, 11, 0.92);
+  --canvas-node-header-border: rgba(255, 255, 255, 0.06);
+  --canvas-node-chip-bg: rgba(255, 255, 255, 0.05);
+  --canvas-node-chip-text: #cbd5e1;
+  --canvas-node-action-bg: rgba(255, 255, 255, 0.03);
+  --canvas-node-action-border: rgba(255, 255, 255, 0.08);
+  --canvas-node-action-text: #e5e7eb;
+  --canvas-node-action-hover-bg: rgba(255, 255, 255, 0.08);
+  --canvas-node-action-primary-bg: #2563eb;
+  --canvas-node-action-primary-hover-bg: #1d4ed8;
+  --canvas-node-action-primary-text: #ffffff;
+  --canvas-node-action-muted-text: #9aa4b2;
+
+  --canvas-io-bg: rgba(9, 9, 11, 0.92);
+  --canvas-io-border: rgba(148, 163, 184, 0.4);
+  --canvas-io-border-selected: rgba(148, 163, 184, 0.75);
+  --canvas-io-text: #cbd5e1;
+  --canvas-io-handle: #38bdf8;
+
+  --canvas-group-bg: rgba(148, 163, 184, 0.08);
+  --canvas-group-border: rgba(148, 163, 184, 0.35);
+  --canvas-group-border-selected: rgba(148, 163, 184, 0.75);
+}
+
+:root[data-mantine-color-scheme="dark"] .mantine-AppShell-main {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.02), transparent 45%),
+    radial-gradient(circle at 90% 0%, rgba(14, 165, 233, 0.05), transparent 50%),
+    var(--mantine-color-body) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .mantine-AppShell-header,
+:root[data-mantine-color-scheme="dark"] .mantine-AppShell-navbar,
+:root[data-mantine-color-scheme="dark"] .mantine-AppShell-aside {
+  background: rgba(7, 11, 22, 0.9) !important;
+  border: none !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
+}
+
+button {
+  color: var(--mantine-color-text);
+}
+
+:root[data-mantine-color-scheme="dark"] .mantine-Button-root[data-variant="outline"] {
+  border: none !important;
+  background: rgba(146, 167, 255, 0.08) !important;
+  box-shadow: 0 12px 24px rgba(5, 9, 20, 0.45);
+}
+
+:root[data-mantine-color-scheme="dark"] .mantine-Button-root[data-variant="outline"]:hover {
+  border: none !important;
+  background: rgba(146, 167, 255, 0.14) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .mantine-Button-root[data-variant="light"] {
+  border: none !important;
+  background: rgba(120, 135, 186, 0.12) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .mantine-Button-root[data-variant="light"]:hover {
+  border: none !important;
+  background: rgba(120, 135, 186, 0.2) !important;
+}
+
+.mantine-Button-root[data-variant="subtle"] {
+  background: transparent !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .mantine-Paper-root[data-with-border] {
+  background: rgba(7, 10, 22, 0.85) !important;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+}
+
+:root[data-mantine-color-scheme="dark"] .glass {
+  background: rgba(6, 10, 22, 0.85) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .panel-arrow {
+  display: none;
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__controls {
+  background: rgba(5, 9, 18, 0.85) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__controls-button {
+  background: transparent !important;
+  color: #f5f7ff !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__controls-button:hover {
+  background: rgba(146, 167, 255, 0.12) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__controls-button svg {
+  stroke: currentColor !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__minimap {
+  background: rgba(6, 10, 22, 0.92) !important;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.55);
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__minimap-mask {
+  fill: rgba(146, 167, 255, 0.08) !important;
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__selection {
+  background: rgba(125, 211, 252, 0.18) !important;
+  box-shadow: 0 10px 30px rgba(8, 14, 30, 0.4);
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__handle {
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(140deg, rgba(125, 211, 252, 0.3), rgba(59, 130, 246, 0.65)) !important;
+  border: none !important;
+  box-shadow: 0 6px 16px rgba(4, 6, 12, 0.75), 0 0 0 2px rgba(5, 9, 20, 0.8);
+  z-index: 3;
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__node.selected .react-flow__handle {
+  box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.25);
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__handle:hover {
+  box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.18), 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__edge-path {
+  opacity: 0.9;
+  transition: opacity 0.12s ease;
+}
+
+:root[data-mantine-color-scheme="dark"] .react-flow__edge:hover .react-flow__edge-path {
+  opacity: 1;
+}
+
+:root[data-mantine-color-scheme="dark"] *::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+:root[data-mantine-color-scheme="dark"] *::-webkit-scrollbar-thumb {
+  background: rgba(125, 140, 178, 0.35);
+  border-radius: 8px;
+}
+
+:root[data-mantine-color-scheme="dark"] *::-webkit-scrollbar-thumb:hover {
+  background: rgba(125, 140, 178, 0.55);
+}
+
+:root[data-mantine-color-scheme="dark"] *::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+:root[data-mantine-color-scheme="dark"] [data-ux-panel] {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(125, 140, 178, 0.45) transparent;
+}
+
+:root[data-mantine-color-scheme="dark"] [data-ux-panel] *::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+:root[data-mantine-color-scheme="dark"] [data-ux-panel] *::-webkit-scrollbar-thumb {
+  background: rgba(125, 140, 178, 0.35);
+  border-radius: 8px;
+}
+
+:root[data-mantine-color-scheme="dark"] [data-ux-panel] *::-webkit-scrollbar-thumb:hover {
+  background: rgba(125, 140, 178, 0.55);
+}
+
+:root[data-mantine-color-scheme="dark"] [data-ux-panel] *::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+[data-compact="true"] .mantine-Button-root {
+  padding: 4px 8px !important;
+}
+
+[data-compact="true"] .mantine-NumberInput-input,
+[data-compact="true"] .mantine-TextInput-input,
+[data-compact="true"] textarea {
+  padding: 6px 8px !important;
+}
+
+[data-compact="true"] .mantine-Stack-root {
+  gap: 6px !important;
+}
+
+[data-compact="true"] .mantine-Group-root {
+  gap: 6px !important;
+}
+
+[data-dragging="true"] .react-flow__node:not(.selected) {
+  opacity: 0.45;
+  transition: opacity 0.12s ease;
+}

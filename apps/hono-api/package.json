@@ -1,0 +1,29 @@
+{
+  "name": "cloudflare-workers-openapi",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "deploy": "WRANGLER_HOME=$PWD/.xdg/.wrangler wrangler deploy",
+    "dev": "mkdir -p .wrangler/local-logs .xdg/.wrangler && WRANGLER_HOME=$PWD/.xdg/.wrangler WRANGLER_LOG_PATH=$PWD/.wrangler/local-logs/wrangler.log wrangler dev --port 8788",
+    "dev:local": "pnpm db:update:local && pnpm dev",
+    "dev:log": "mkdir -p .xdg/.wrangler && WRANGLER_HOME=$PWD/.xdg/.wrangler DEBUG_HTTP_LOG=1 wrangler dev --port 8788 2>&1 | tee log.txt",
+    "start": "mkdir -p .xdg/.wrangler && WRANGLER_HOME=$PWD/.xdg/.wrangler wrangler dev --remote",
+    "cf-typegen": "mkdir -p .xdg/.wrangler && WRANGLER_HOME=$PWD/.xdg/.wrangler wrangler types",
+    "db:update:local": "mkdir -p .wrangler/local-logs .xdg/.wrangler && WRANGLER_HOME=$PWD/.xdg/.wrangler WRANGLER_LOG_PATH=$PWD/.wrangler/local-logs/wrangler.log wrangler d1 execute tapcanvas --file=./schema.sql --local",
+    "db:update:remote": "mkdir -p .xdg/.wrangler && WRANGLER_HOME=$PWD/.xdg/.wrangler wrangler d1 execute tapcanvas --file=./schema.sql --remote"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.45",
+    "@ai-sdk/google": "^2.0.39",
+    "@ai-sdk/openai": "^2.0.69",
+    "ai": "^5.0.97",
+    "chanfana": "^2.6.3",
+    "hono": "^4.6.20",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.0",
+    "@types/service-worker-mock": "^2.0.4",
+    "wrangler": "^4.53.0"
+  }
+}
